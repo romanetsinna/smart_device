@@ -1,0 +1,14 @@
+.agreement {
+  width: 44.83%;
+  display: flex;
+  align-items: center;
+}
+
+.agreement__label {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  color: $color-default-white;
+  margin-left: 11px;
+}

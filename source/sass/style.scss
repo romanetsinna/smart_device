@@ -18,11 +18,33 @@
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
+@import "blocks/about";
+@import "blocks/agreement";
+@import "blocks/benefits";
+@import "blocks/body-container";
+@import "blocks/button";
+@import "blocks/comment";
+@import "blocks/contacts";
+
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+
+@import "blocks/feedback";
+@import "blocks/form";
+@import "blocks/header-contacts";
+@import "blocks/logo";
+@import "blocks/main-container";
+@import "blocks/main-footer";
+@import "blocks/main-header";
+
+@import "blocks/modal";
+
+@import "blocks/navigation";
+@import "blocks/office-contacts";
+@import "blocks/page";
+@import "blocks/services";
+@import "blocks/social";
 
 // ---------------------------------
 

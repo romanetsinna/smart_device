@@ -1,0 +1,33 @@
+.logo {
+  display: flex;
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo__text-name {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  color: $color-light;
+}
+
+.logo__text-description {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 500;
+  color: $color-default-white;
+  opacity: 70%;
+}
+
+.logo__image {
+  margin-right: 15px;
+}
