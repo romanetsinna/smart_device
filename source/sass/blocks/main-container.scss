@@ -10,11 +10,31 @@
   background-position: center;
   background-size: cover;
   background-color: rgba(25, 32, 36, 0);
+
+  @include vp-1023 {
+    padding-top: 180px;
+    padding-bottom: 205px;
+    min-height: 640px;
+  }
+
+  @include vp-767 {
+    padding-top: 150px;
+    padding-bottom: 190px;
+    min-height: 560px;
+  }
 }
 
 .main-container__inner-wrapper {
   margin: 0 auto;
   padding-left: 125px;
+
+  @include vp-1023 {
+    padding-left: 50px;
+  }
+
+  @include vp-767 {
+    padding-left: 26px;
+  }
 }
 
 .main-container__title {
@@ -28,10 +48,15 @@
   text-transform: uppercase;
   margin-bottom: 40px;
 
-  @include vp-1439 {
+  @include vp-1023 {
     font-size: 64px;
     line-height: 75px;
     margin-bottom: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 36px;
+    line-height: 42px;
   }
 }
 
@@ -45,8 +70,15 @@
   color: $color-light;
   margin-bottom: 40px;
 
-  @include vp-1439 {
-    margin-bottom: 50px;
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.main-container__text br {
+  @include vp-767 {
+    display: none;
   }
 }
 
@@ -59,10 +91,43 @@
   text-transform: uppercase;
   background-color: $color-blue;
   border: none;
-  padding: 15px 26px;
+  padding: 15px 37px;
   border-radius: 3px;
+
+  @include vp-1023 {
+    margin-left: 45px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 30px;
+  }
+}
+
+.main-container__button--short {
+  display: none;
+
+  @include vp-767 {
+    display: inline;
+  }
+}
+
+.main-container__button--long {
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .main-container__benefits {
   padding: 120px 0;
+
+  @include vp-1023 {
+    padding: 80px 0;
+  }
+
+  @include vp-767 {
+    padding: 50px 0;
+  }
 }

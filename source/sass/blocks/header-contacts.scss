@@ -8,36 +8,38 @@
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   color: $color-light;
+}
+
+.header-contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @include vp-1023 {
+    justify-content: flex-end;
+  }
+}
+
+.header-contacts__item {
+  display: flex;
+}
+
+.header-contacts__item + .header-contacts__item {
+  @include vp-1023 {
+    margin-left: 20px;
+  }
+}
+
+.header-contacts__email,
+.header-contacts__phone {
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
 
   @include vp-1023 {
     display: none;
   }
-}
-
-.header-contacts__email {
-  position: relative;
-}
-
-.header-contacts__email::before {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  top: 0;
-  left: -35px;
-  background-image: url("../../img/email.svg");
-}
-
-.header-contacts__phone {
-  position: relative;
-}
-
-.header-contacts__phone::before {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  top: 0;
-  left: -35px;
-  background-image: url("../../img/phone.svg");
 }

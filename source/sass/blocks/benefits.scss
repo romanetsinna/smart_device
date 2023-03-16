@@ -6,17 +6,40 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content min-content;
   gap: 30px;
+
+  @include vp-767 {
+    display: initial;
+  }
 }
 
 .benefits__item {
   padding: 40px 45px 35px 45px;
   border: $color-grey 1px solid;
   border-left: $color-blue 5px solid;
+
+  @include vp-1023 {
+    padding: 40px 30px 35px 45px;
+  }
+
+  @include vp-767 {
+    padding: 30px 30px 35px 30px;
+  }
+}
+
+.benefits__item + .benefits__item {
+  @include vp-767 {
+    margin-top: 30px;
+  }
 }
 
 .benefits__item svg {
   fill: $color-blue;
   margin-bottom: 20px;
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .benefits__item-title {
@@ -29,6 +52,11 @@
   font-weight: 400;
   color: $color-blue;
   position: relative;
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .benefits__item-description {
@@ -39,4 +67,25 @@
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   color: $color-dark;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.benefits__item:hover {
+  background-color: $color-blue;
+}
+
+.benefits__item:hover svg {
+  fill: $color-light;
+}
+
+.benefits__item:hover .benefits__item-title {
+  color: $color-light;
+}
+
+.benefits__item:hover .benefits__item-description {
+  color: $color-light;
 }

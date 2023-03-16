@@ -48,3 +48,62 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el)
+
+
+// Аккордеон
+
+const boxes = Array.from(document.querySelectorAll('.accordion__box'));
+
+boxes.forEach((box) => {
+  box.addEventListener('click', boxHandler);
+});
+
+function boxHandler(e) {
+  hidePanels();
+  e.preventDefault();
+  let currentBox = e.target.closest('.accordion__box');
+  let currentContent = e.target.nextElementSibling;
+  currentBox.classList.add('active');
+  if (currentBox.classList.contains('active')) {
+    currentContent.style.maxHeight = currentContent.scrollHeight + 'px';
+  } else {
+    currentContent.style.maxHeight = 0;
+  }
+}
+
+function hidePanels() {
+  let acc = document.querySelectorAll('.accordion__box');
+  let accPanel = document.querySelectorAll('.accordion__content');
+  for (let i = 0; i < accPanel.length; i++) {
+    accPanel[i].style.maxHeight = null;
+    acc[i].classList.remove('active');
+  }
+}
+
+// Показать/Свернуть
+
+let moreText = document.querySelector('.about__show-more');
+let btnText = document.querySelector('.about__button');
+
+btnText.addEventListener('click', function (event) {
+  event.preventDefault();
+  moreText.classList.toggle('about__show-more');
+  btnText.textContent = btnText.textContent === 'Подробнее' ? 'Свернуть' : 'Подробнее';
+});
+
+
+// Плавный скролл
+
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+
+for (let smoothLink of smoothLinks) {
+  smoothLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    const id = smoothLink.getAttribute('href');
+
+    document.querySelector(id).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  });
+}
