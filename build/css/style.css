@@ -392,7 +392,6 @@ template {
   font-weight: 400;
   font-display: swap;
   src: local("Roboto Condensed"), url("../../fonts/robotocondensedlight.woff2") format("woff2"), url("../../fonts/robotocondensedlight.woff") format("woff");
-  font-display: swap;
 }
 
 @font-face {
@@ -401,7 +400,6 @@ template {
   font-weight: 500;
   font-display: swap;
   src: local("Roboto Condensed"), url("../../fonts/robotocondensedregular.woff2") format("woff2"), url("../../fonts/robotocondensedregular.woff") format("woff");
-  font-display: swap;
 }
 
 @font-face {
@@ -410,7 +408,6 @@ template {
   font-weight: 700;
   font-display: swap;
   src: local("Roboto Condensed"), url("../../fonts/robotocondensedbold.woff2") format("woff2"), url("../../fonts/robotocondensedbold.woff") format("woff");
-  font-display: swap;
 }
 
 @font-face {
@@ -419,7 +416,6 @@ template {
   font-weight: 400;
   font-display: swap;
   src: local("PT Mono"), url("../../fonts/ptmonoregular.woff2") format("woff2"), url("../../fonts/ptmonoregular.woff") format("woff");
-  font-display: swap;
 }
 
 *,
@@ -696,6 +692,11 @@ button,
   border: 1px solid #00b2ff;
   border-radius: 3px;
   margin-top: 20px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .about__show-more {
@@ -1395,6 +1396,11 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .form__checkbox {
@@ -1403,19 +1409,8 @@ button,
 }
 
 .header-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   width: 100%;
   max-width: 480px;
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-weight: 400;
-  color: #f2f5f6;
 }
 
 .header-contacts__list {
@@ -1425,9 +1420,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -1437,8 +1432,23 @@ button,
   display: flex;
 }
 
+.header-contacts__item + .header-contacts__item {
+  margin-left: 30px;
+}
+
 .header-contacts__email,
 .header-contacts__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-contacts__text {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  color: #f2f5f6;
   margin: 0;
   padding: 0;
   margin-left: 15px;
@@ -1542,6 +1552,11 @@ button,
   border: none;
   padding: 15px 37px;
   border-radius: 3px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .main-container__button--short {
@@ -1622,6 +1637,11 @@ button,
   border: 1px #f2f5f6 solid;
   padding: 10px 15px;
   border-radius: 3px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .modal {
@@ -2126,8 +2146,7 @@ button,
     margin-left: 20px;
   }
 
-  .header-contacts__email,
-  .header-contacts__phone {
+  .header-contacts__text {
     display: none;
   }
 

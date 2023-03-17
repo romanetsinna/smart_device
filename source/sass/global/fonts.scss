@@ -6,7 +6,6 @@
   src: local("Roboto Condensed"),
     url("../../fonts/robotocondensedlight.woff2") format("woff2"),
     url("../../fonts/robotocondensedlight.woff") format("woff");
-  font-display: swap;
 }
 
 @font-face {
@@ -17,7 +16,6 @@
   src: local("Roboto Condensed"),
     url("../../fonts/robotocondensedregular.woff2") format("woff2"),
     url("../../fonts/robotocondensedregular.woff") format("woff");
-  font-display: swap;
 }
 
 @font-face {
@@ -28,7 +26,6 @@
   src: local("Roboto Condensed"),
     url("../../fonts/robotocondensedbold.woff2") format("woff2"),
     url("../../fonts/robotocondensedbold.woff") format("woff");
-  font-display: swap;
 }
 
 @font-face {
@@ -39,5 +36,4 @@
   src: local("PT Mono"),
     url("../../fonts/ptmonoregular.woff2") format("woff2"),
     url("../../fonts/ptmonoregular.woff") format("woff");
-  font-display: swap;
 }

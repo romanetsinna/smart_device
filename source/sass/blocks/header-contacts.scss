@@ -1,13 +1,6 @@
 .header-contacts {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   max-width: 480px;
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-weight: 400;
-  color: $color-light;
 }
 
 .header-contacts__list {
@@ -15,7 +8,7 @@
   padding: 0;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 
   @include vp-1023 {
@@ -28,6 +21,8 @@
 }
 
 .header-contacts__item + .header-contacts__item {
+  margin-left: 30px;
+
   @include vp-1023 {
     margin-left: 20px;
   }
@@ -35,6 +30,15 @@
 
 .header-contacts__email,
 .header-contacts__phone {
+  display: flex;
+}
+
+.header-contacts__text {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  color: $color-light;
   margin: 0;
   padding: 0;
   margin-left: 15px;

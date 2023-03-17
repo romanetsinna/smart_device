@@ -1,14 +1,12 @@
 .custom-input,
 .custom-textarea {
-
-    input,
-    textarea {
-
-      &:hover,
-      &:focus {
-        opacity: 0.8;
-      }
+  input,
+  textarea {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
     }
+  }
 
   &.is-invalid {
     input,
@@ -34,7 +32,6 @@
   }
 
   .input-message {
-
     &.is-invalid {
       color: #ff0000;
     }
@@ -44,4 +41,3 @@
     }
   }
 }
-
