@@ -106,12 +106,18 @@
                 <h3 class="benefits__item-title">Персонализация стоимости</h3>
                 <p class="benefits__item-description">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
               </li>
+
             </ul>
           </section>
 
           <!-- About -->
           <section class="main-container__about about">
-            <img class="about__image" src="./img/2022.png" width="150" height="320" alt="2022 год.">
+
+            <picture class="about__image">
+              <source type="image/webp" srcset="./img/2022.webp 1x, ./img/2022@2x.webp 2x">
+              <img src="./img/2022.png" width="150" height="320" alt="2022 год." srcset="./img/2022@2x.png 2x">
+            </picture>
+
             <div class="about__wrapper">
               <h2 class="about__title">О компании</h2>
               <div class="about__description">
@@ -177,34 +183,44 @@
         </section>
 
           <!-- Feedback -->
-        <section id="consultation" class="main-container__feedback feedback">
-          <div class="container">
+        <section id="consultation" class="main-container__feedback feedback component-demo" data-tabs="element">
+          <div class="container component-demo__form" data-form-validate="data-form-validate" data-callback="base">
             <div class="feedback__wrapper">
 
               <h2 class="feedback__title">Остались вопросы?<br> Задайте их нам!</h2>
               <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
 
               <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
-                <fieldset class="form__name">
-                  <label for="name"></label>
-                  <input placeholder="Имя" type="text" name="name" id="name" required>
-                </fieldset>
-                <fieldset class="form__phone">
-                  <label for="phone-number"></label>
-                  <input placeholder="Телефон" type="tel" name="phone-number" id="phone-number" required>
-                </fieldset>
-                <fieldset class="form__comment">
-                  <legend class="visually-hidden">Задайте Ваш вопрос</legend>
-                  <textarea placeholder="Ваш вопрос" name="comment" id="comment" rows="5"></textarea>
-                </fieldset>
+
+                <div class="custom-input form__name" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                  <label>
+                    <input type="text" name="user-name-1" placeholder="Имя"/>
+                  </label>
+                </div>
+
+                <div class="custom-input form__phone" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
+                  <label>
+                    <input type="tel" name="user-phone" placeholder="Телефон"/>
+                  </label>
+                </div>
+
+                <div class="custom-textarea form__comment" data-validate-type="text">
+                  <label>
+                    <legend class="visually-hidden">Задайте Ваш вопрос</legend>
+                    <textarea name="user-info" placeholder="Ваш вопрос" rows="5"></textarea>
+                  </label>
+                </div>
+
                 <button class="button form__button" type="submit">Задать вопрос</button>
-                <div class="form__checkbox agreement">
+
+                <div class="form__checkbox agreement custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-message-base="Необходимо предоставить согласие">
                   <label class="agreement__control">
-                    <input class="agreement__input" type="checkbox" name="agreement" checked>
+                    <input class="agreement__input" type="checkbox" value="user-agreement-1" name="user-agreement" checked/>
                     <span class="agreement__mark"></span>
                     <span class="agreement__label">Я согласен на обработку персональных данных</span>
                   </label>
                 </div>
+
               </form>
             </div>
 
@@ -314,8 +330,8 @@
 
     <!-- Модалка -->
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
+    <section id="consultation" class="main-container__feedback feedback component-demo modal modal--preload modal--fit-content modal--no-scale" data-tabs="element" data-modal="success">
+      <div class="modal__wrapper component-demo__form" data-form-validate="data-form-validate" data-callback="base">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
 
@@ -323,26 +339,36 @@
           <p class="modal__text">Оставьте контакты, мы проконсультируем<br> вас бесплатно в удобное время</p>
 
           <form class="modal__form form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="modal__form-name form__name">
-              <label for="name-modal"></label>
-              <input placeholder="Имя" type="text" name="name-modal" id="name-modal" required>
-            </fieldset>
-            <fieldset class="modal__form-phone form__phone">
-              <label for="phone-modal"></label>
-              <input placeholder="Телефон" type="tel" name="phone-modal" id="phone-modal" required>
-            </fieldset>
-            <fieldset class="modal__form-comment form__comment">
-              <legend class="visually-hidden">Задайте Ваш вопрос</legend>
-              <textarea placeholder="Ваш вопрос" name="comment-modal" id="comment-modal" rows="5"></textarea>
-            </fieldset>
+
+            <div class="custom-input form__name modal__form-name" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+              <label>
+                <input autofocus type="text" name="user-name-1" placeholder="Имя" required/>
+              </label>
+            </div>
+
+            <div class="custom-input form__phone modal__form-phone" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
+              <label>
+                <input type="tel" name="user-phone" placeholder="Телефон"/>
+              </label>
+            </div>
+
+            <div class="custom-textarea form__comment modal__form-comment" data-validate-type="text">
+              <label>
+                <legend class="visually-hidden">Задайте Ваш вопрос</legend>
+                <textarea name="user-info" placeholder="Ваш вопрос" rows="5"></textarea>
+              </label>
+            </div>
+
             <button class="modal__form-button button form__button" type="submit">Отправить</button>
-            <div class="modal__form-checkbox form__checkbox agreement">
+
+            <div class="modal__form-checkbox form__checkbox agreement custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-message-base="Необходимо предоставить согласие">
               <label class="agreement__control">
-                <input class="agreement__input" type="checkbox" name="agreement" checked>
+                <input class="agreement__input" type="checkbox" value="user-agreement-1" name="user-agreement" checked/>
                 <span class="agreement__mark"></span>
                 <span class="agreement__label">Я согласен на обработку персональных данных</span>
               </label>
             </div>
+
           </form>
 
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
@@ -350,9 +376,12 @@
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
+
         </div>
+
       </div>
-    </div>
+
+    </section>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

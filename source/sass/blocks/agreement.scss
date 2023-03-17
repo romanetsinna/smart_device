@@ -30,6 +30,11 @@
   opacity: 0.8;
   margin-left: 20px;
   padding-top: 10px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 .agreement__input:checked + .agreement__mark::before,
