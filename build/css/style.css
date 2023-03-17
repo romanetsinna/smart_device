@@ -692,7 +692,6 @@ button,
   border: 1px solid #00b2ff;
   border-radius: 3px;
   margin-top: 20px;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1227,8 +1226,7 @@ button,
   height: 100%;
   top: 240px;
   left: 20px;
-  background-image: -webkit-image-set(url("../../img/paper_airplane.png") 1x, url("../../img/paper_airplane@2x.png") 2x), -webkit-image-set(url("../../img/paper_airplane.png") 1x, url("../../img/paper_airplane@2x.png") 2x);
-  background-image: -webkit-image-set(url("../../img/paper_airplane.png") 1x, url("../../img/paper_airplane@2x.png") 2x), image-set("../../img/paper_airplane.png" 1x, "../../img/paper_airplane@2x.png" 2x);
+  background-image: url("../../img/paper_airplane.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   z-index: 1;
@@ -1396,7 +1394,6 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1504,10 +1501,9 @@ button,
   position: relative;
   width: 100%;
   min-height: 880px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../../img/background-image.jpg") 1x, url("../../img/background-image@2x.jpg") 2x), image-set("../../img/background-image.jpg" 1x, "../../img/background-image@2x.jpg" 2x);
-  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/background-image.jpg") 1x, url("../../img/background-image@2x.jpg") 2x), image-set("../../img/background-image.jpg" 1x, "../../img/background-image@2x.jpg" 2x);
-  background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/background-image.jpg") 1x, url("../../img/background-image@2x.jpg") 2x), -webkit-image-set(url("../../img/background-image.jpg") 1x, url("../../img/background-image@2x.jpg") 2x);
-  background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/background-image.jpg") 1x, url("../../img/background-image@2x.jpg") 2x), image-set("../../img/background-image.jpg" 1x, "../../img/background-image@2x.jpg" 2x);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/background-image.jpg");
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/background-image.jpg");
+  background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/background-image.jpg");
   background-position: center;
   background-size: cover;
   background-color: #041827;
@@ -1552,7 +1548,6 @@ button,
   border: none;
   padding: 15px 37px;
   border-radius: 3px;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1637,7 +1632,6 @@ button,
   border: 1px #f2f5f6 solid;
   padding: 10px 15px;
   border-radius: 3px;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1920,24 +1914,21 @@ button,
 }
 
 .services__item--first::before {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../../img/service_bi_1.jpg") 1x, url("../../img/service_bi_1@2x.jpg") 2x), image-set("../../img/service_bi_1.jpg" 1x, "../../img/service_bi_1@2x.jpg" 2x);
-  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_1.jpg") 1x, url("../../img/service_bi_1@2x.jpg") 2x), image-set("../../img/service_bi_1.jpg" 1x, "../../img/service_bi_1@2x.jpg" 2x);
-  background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_1.jpg") 1x, url("../../img/service_bi_1@2x.jpg") 2x), -webkit-image-set(url("../../img/service_bi_1.jpg") 1x, url("../../img/service_bi_1@2x.jpg") 2x);
-  background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_1.jpg") 1x, url("../../img/service_bi_1@2x.jpg") 2x), image-set("../../img/service_bi_1.jpg" 1x, "../../img/service_bi_1@2x.jpg" 2x);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_1.jpg");
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_1.jpg");
+  background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_1.jpg");
 }
 
 .services__item--second::before {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../../img/service_bi_2.jpg") 1x, url("../../img/service_bi_2@2x.jpg") 2x), image-set("../../img/service_bi_2.jpg" 1x, "../../img/service_bi_2@2x.jpg" 2x);
-  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_2.jpg") 1x, url("../../img/service_bi_2@2x.jpg") 2x), image-set("../../img/service_bi_2.jpg" 1x, "../../img/service_bi_2@2x.jpg" 2x);
-  background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_2.jpg") 1x, url("../../img/service_bi_2@2x.jpg") 2x), -webkit-image-set(url("../../img/service_bi_2.jpg") 1x, url("../../img/service_bi_2@2x.jpg") 2x);
-  background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_2.jpg") 1x, url("../../img/service_bi_2@2x.jpg") 2x), image-set("../../img/service_bi_2.jpg" 1x, "../../img/service_bi_2@2x.jpg" 2x);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_2.jpg");
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_2.jpg");
+  background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_2.jpg");
 }
 
 .services__item--third::before {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../../img/service_bi_3.jpg") 1x, url("../../img/service_bi_3@2x.jpg") 2x), image-set("../../img/service_bi_3.jpg" 1x, "../../img/service_bi_3@2x.jpg" 2x);
-  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_3.jpg") 1x, url("../../img/service_bi_3@2x.jpg") 2x), image-set("../../img/service_bi_3.jpg" 1x, "../../img/service_bi_3@2x.jpg" 2x);
-  background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_3.jpg") 1x, url("../../img/service_bi_3@2x.jpg") 2x), -webkit-image-set(url("../../img/service_bi_3.jpg") 1x, url("../../img/service_bi_3@2x.jpg") 2x);
-  background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_3.jpg") 1x, url("../../img/service_bi_3@2x.jpg") 2x), image-set("../../img/service_bi_3.jpg" 1x, "../../img/service_bi_3@2x.jpg" 2x);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_3.jpg");
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_3.jpg");
+  background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_3.jpg");
 }
 
 .services__item-title {
@@ -2240,28 +2231,45 @@ button,
   }
 
   .services__item--first::before {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../../img/service_bi_1-tablet.jpg") 1x, url("../../img/service_bi_1-tablet@2x.jpg") 2x), image-set("../../img/service_bi_1-tablet.jpg" 1x, "../../img/service_bi_1-tablet@2x.jpg" 2x);
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_1-tablet.jpg") 1x, url("../../img/service_bi_1-tablet@2x.jpg") 2x), image-set("../../img/service_bi_1-tablet.jpg" 1x, "../../img/service_bi_1-tablet@2x.jpg" 2x);
-    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_1-tablet.jpg") 1x, url("../../img/service_bi_1-tablet@2x.jpg") 2x), -webkit-image-set(url("../../img/service_bi_1-tablet.jpg") 1x, url("../../img/service_bi_1-tablet@2x.jpg") 2x);
-    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_1-tablet.jpg") 1x, url("../../img/service_bi_1-tablet@2x.jpg") 2x), image-set("../../img/service_bi_1-tablet.jpg" 1x, "../../img/service_bi_1-tablet@2x.jpg" 2x);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_1-tablet.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_1-tablet.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_1-tablet.jpg");
   }
 
   .services__item--second::before {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../../img/service_bi_2-tablet.jpg") 1x, url("../../img/service_bi_2-tablet@2x.jpg") 2x), image-set("../../img/service_bi_2-tablet.jpg" 1x, "../../img/service_bi_2-tablet@2x.jpg" 2x);
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_2-tablet.jpg") 1x, url("../../img/service_bi_2-tablet@2x.jpg") 2x), image-set("../../img/service_bi_2-tablet.jpg" 1x, "../../img/service_bi_2-tablet@2x.jpg" 2x);
-    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_2-tablet.jpg") 1x, url("../../img/service_bi_2-tablet@2x.jpg") 2x), -webkit-image-set(url("../../img/service_bi_2-tablet.jpg") 1x, url("../../img/service_bi_2-tablet@2x.jpg") 2x);
-    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_2-tablet.jpg") 1x, url("../../img/service_bi_2-tablet@2x.jpg") 2x), image-set("../../img/service_bi_2-tablet.jpg" 1x, "../../img/service_bi_2-tablet@2x.jpg" 2x);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_2-tablet.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_2-tablet.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_2-tablet.jpg");
   }
 
   .services__item--third::before {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../../img/service_bi_3-tablet.jpg") 1x, url("../../img/service_bi_3-tablet@2x.jpg") 2x), image-set("../../img/service_bi_3-tablet.jpg" 1x, "../../img/service_bi_3-tablet@2x.jpg" 2x);
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_3-tablet.jpg") 1x, url("../../img/service_bi_3-tablet@2x.jpg") 2x), image-set("../../img/service_bi_3-tablet.jpg" 1x, "../../img/service_bi_3-tablet@2x.jpg" 2x);
-    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_3-tablet.jpg") 1x, url("../../img/service_bi_3-tablet@2x.jpg") 2x), -webkit-image-set(url("../../img/service_bi_3-tablet.jpg") 1x, url("../../img/service_bi_3-tablet@2x.jpg") 2x);
-    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_3-tablet.jpg") 1x, url("../../img/service_bi_3-tablet@2x.jpg") 2x), image-set("../../img/service_bi_3-tablet.jpg" 1x, "../../img/service_bi_3-tablet@2x.jpg" 2x);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_3-tablet.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_3-tablet.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_3-tablet.jpg");
   }
 
   .services__item-title {
     padding: 40px 395px 155px 45px;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .services__item--first::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_1-tablet@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_1-tablet@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_1-tablet@2x.jpg");
+  }
+
+  .services__item--second::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_2-tablet@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_2-tablet@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_2-tablet@2x.jpg");
+  }
+
+  .services__item--third::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_3-tablet@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_3-tablet@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_3-tablet@2x.jpg");
   }
 }
 
@@ -2579,24 +2587,21 @@ button,
   }
 
   .services__item--first::before {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../../img/service_bi_1-mobile.jpg") 1x, url("../../img/service_bi_1-mobile@2x.jpg") 2x), image-set("../../img/service_bi_1-mobile.jpg" 1x, "../../img/service_bi_1-mobile@2x.jpg" 2x);
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_1-mobile.jpg") 1x, url("../../img/service_bi_1-mobile@2x.jpg") 2x), image-set("../../img/service_bi_1-mobile.jpg" 1x, "../../img/service_bi_1-mobile@2x.jpg" 2x);
-    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_1-mobile.jpg") 1x, url("../../img/service_bi_1-mobile@2x.jpg") 2x), -webkit-image-set(url("../../img/service_bi_1-mobile.jpg") 1x, url("../../img/service_bi_1-mobile@2x.jpg") 2x);
-    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_1-mobile.jpg") 1x, url("../../img/service_bi_1-mobile@2x.jpg") 2x), image-set("../../img/service_bi_1-mobile.jpg" 1x, "../../img/service_bi_1-mobile@2x.jpg" 2x);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_1-mobile.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_1-mobile.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_1-mobile.jpg");
   }
 
   .services__item--second::before {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../../img/service_bi_2-mobile.jpg") 1x, url("../../img/service_bi_2-mobile@2x.jpg") 2x), image-set("../../img/service_bi_2-mobile.jpg" 1x, "../../img/service_bi_2-mobile@2x.jpg" 2x);
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_2-mobile.jpg") 1x, url("../../img/service_bi_2-mobile@2x.jpg") 2x), image-set("../../img/service_bi_2-mobile.jpg" 1x, "../../img/service_bi_2-mobile@2x.jpg" 2x);
-    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_2-mobile.jpg") 1x, url("../../img/service_bi_2-mobile@2x.jpg") 2x), -webkit-image-set(url("../../img/service_bi_2-mobile.jpg") 1x, url("../../img/service_bi_2-mobile@2x.jpg") 2x);
-    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_2-mobile.jpg") 1x, url("../../img/service_bi_2-mobile@2x.jpg") 2x), image-set("../../img/service_bi_2-mobile.jpg" 1x, "../../img/service_bi_2-mobile@2x.jpg" 2x);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_2-mobile.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_2-mobile.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_2-mobile.jpg");
   }
 
   .services__item--third::before {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../../img/service_bi_3-mobile.jpg") 1x, url("../../img/service_bi_3-mobile@2x.jpg") 2x), image-set("../../img/service_bi_3-mobile.jpg" 1x, "../../img/service_bi_3-mobile@2x.jpg" 2x);
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_3-mobile.jpg") 1x, url("../../img/service_bi_3-mobile@2x.jpg") 2x), image-set("../../img/service_bi_3-mobile.jpg" 1x, "../../img/service_bi_3-mobile@2x.jpg" 2x);
-    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_3-mobile.jpg") 1x, url("../../img/service_bi_3-mobile@2x.jpg") 2x), -webkit-image-set(url("../../img/service_bi_3-mobile.jpg") 1x, url("../../img/service_bi_3-mobile@2x.jpg") 2x);
-    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), -webkit-image-set(url("../../img/service_bi_3-mobile.jpg") 1x, url("../../img/service_bi_3-mobile@2x.jpg") 2x), image-set("../../img/service_bi_3-mobile.jpg" 1x, "../../img/service_bi_3-mobile@2x.jpg" 2x);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_3-mobile.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_3-mobile.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_3-mobile.jpg");
   }
 
   .services__item-title {
@@ -2628,6 +2633,26 @@ button,
   }
 }
 
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
+  .services__item--first::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_1-mobile@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_1-mobile@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_1-mobile@2x.jpg");
+  }
+
+  .services__item--second::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_2-mobile@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_2-mobile@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_2-mobile@2x.jpg");
+  }
+
+  .services__item--third::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_3-mobile@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_3-mobile@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_3-mobile@2x.jpg");
+  }
+}
+
 @media (hover: hover) {
   .button:hover:not(.focus-visible) {
     opacity: 0.8;
@@ -2639,5 +2664,35 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .feedback .container::before {
+    background-image: url("../../img/paper_airplane@2x.png");
+  }
+
+  .main-container__wrapper {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/background-image@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/background-image@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/background-image@2x.jpg");
+  }
+
+  .services__item--first::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_1@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_1@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_1@2x.jpg");
+  }
+
+  .services__item--second::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_2@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_2@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_2@2x.jpg");
+  }
+
+  .services__item--third::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/service_bi_3@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_3@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)), url("../../img/service_bi_3@2x.jpg");
   }
 }

@@ -101,81 +101,108 @@
 .services__item--first::before {
   background-image:
     linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
-    -webkit-image-set(url("../../img/service_bi_1.jpg") 1x, url("../../img/service_bi_1@2x.jpg") 2x),
-    image-set(
-      "../../img/service_bi_1.jpg" 1x,
-      "../../img/service_bi_1@2x.jpg" 2x);
+    url("../../img/service_bi_1.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
+      url("../../img/service_bi_1@2x.jpg");
+  }
 
   @include vp-1023 {
     background-image:
       linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
-      -webkit-image-set(url("../../img/service_bi_1-tablet.jpg") 1x, url("../../img/service_bi_1-tablet@2x.jpg") 2x),
-      image-set(
-        "../../img/service_bi_1-tablet.jpg" 1x,
-        "../../img/service_bi_1-tablet@2x.jpg" 2x);
+      url("../../img/service_bi_1-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
+        url("../../img/service_bi_1-tablet@2x.jpg");
+    }
   }
 
   @include vp-767 {
     background-image:
       linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
-      -webkit-image-set(url("../../img/service_bi_1-mobile.jpg") 1x, url("../../img/service_bi_1-mobile@2x.jpg") 2x),
-      image-set(
-        "../../img/service_bi_1-mobile.jpg" 1x,
-        "../../img/service_bi_1-mobile@2x.jpg" 2x);
+      url("../../img/service_bi_1-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
+        url("../../img/service_bi_1-mobile@2x.jpg");
+    }
   }
 }
 
 .services__item--second::before {
   background-image:
     linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
-    -webkit-image-set(url("../../img/service_bi_2.jpg") 1x, url("../../img/service_bi_2@2x.jpg") 2x),
-    image-set(
-      "../../img/service_bi_2.jpg" 1x,
-      "../../img/service_bi_2@2x.jpg" 2x);
+    url("../../img/service_bi_2.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
+      url("../../img/service_bi_2@2x.jpg");
+  }
 
   @include vp-1023 {
     background-image:
       linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
-      -webkit-image-set(url("../../img/service_bi_2-tablet.jpg") 1x, url("../../img/service_bi_2-tablet@2x.jpg") 2x),
-      image-set(
-        "../../img/service_bi_2-tablet.jpg" 1x,
-        "../../img/service_bi_2-tablet@2x.jpg" 2x);
+      url("../../img/service_bi_2-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
+        url("../../img/service_bi_2-tablet@2x.jpg");
+    }
   }
 
   @include vp-767 {
     background-image:
       linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
-      -webkit-image-set(url("../../img/service_bi_2-mobile.jpg") 1x, url("../../img/service_bi_2-mobile@2x.jpg") 2x),
-      image-set(
-        "../../img/service_bi_2-mobile.jpg" 1x,
-        "../../img/service_bi_2-mobile@2x.jpg" 2x);
+      url("../../img/service_bi_2-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
+        url("../../img/service_bi_2-mobile@2x.jpg");
+    }
   }
 }
 
 .services__item--third::before {
   background-image:
     linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
-    -webkit-image-set(url("../../img/service_bi_3.jpg") 1x, url("../../img/service_bi_3@2x.jpg") 2x),
-    image-set(
-      "../../img/service_bi_3.jpg" 1x,
-      "../../img/service_bi_3@2x.jpg" 2x);
+    url("../../img/service_bi_3.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
+      url("../../img/service_bi_3@2x.jpg");
+  }
 
   @include vp-1023 {
     background-image:
       linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
-      -webkit-image-set(url("../../img/service_bi_3-tablet.jpg") 1x, url("../../img/service_bi_3-tablet@2x.jpg") 2x),
-      image-set(
-        "../../img/service_bi_3-tablet.jpg" 1x,
-        "../../img/service_bi_3-tablet@2x.jpg" 2x);
+      url("../../img/service_bi_3-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
+        url("../../img/service_bi_3-tablet@2x.jpg");
+    }
   }
 
   @include vp-767 {
     background-image:
       linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
-      -webkit-image-set(url("../../img/service_bi_3-mobile.jpg") 1x, url("../../img/service_bi_3-mobile@2x.jpg") 2x),
-      image-set(
-        "../../img/service_bi_3-mobile.jpg" 1x,
-        "../../img/service_bi_3-mobile@2x.jpg" 2x);
+      url("../../img/service_bi_3-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
+        url("../../img/service_bi_3-mobile@2x.jpg");
+    }
   }
 }
 

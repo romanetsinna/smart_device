@@ -38,13 +38,7 @@
   border: 1px $color-light solid;
   padding: 10px 15px;
   border-radius: 3px;
-
-  -webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+  user-select: none;
 
   @include vp-1023 {
     display: none;
