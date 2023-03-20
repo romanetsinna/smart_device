@@ -7,22 +7,28 @@
   grid-template-rows: min-content min-content;
   gap: 30px;
 
+  @include vp-1023 {
+    gap: 24px;
+  }
+
   @include vp-767 {
     display: initial;
   }
 }
 
 .benefits__item {
-  padding: 40px 45px 35px 45px;
+  padding: 40px 43px 68px 40px;
   border: $color-grey 1px solid;
   border-left: $color-blue 5px solid;
+  margin-left: 1px;
 
   @include vp-1023 {
-    padding: 40px 30px 35px 45px;
+    padding: 40px 30px 35px 40px;
   }
 
   @include vp-767 {
-    padding: 30px 30px 35px 30px;
+    padding: 30px 30px 35px 25px;
+    margin-left: 5px;
   }
 }
 
@@ -34,11 +40,52 @@
 
 .benefits__item svg {
   fill: $color-blue;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+
+  @include vp-1023 {
+    margin-bottom: 8px;
+  }
 
   @include vp-767 {
     width: 30px;
     height: 30px;
+  }
+}
+
+.benefits__item:nth-child(n+3) svg,
+.benefits__item:nth-child(n+3) .benefits__item-title {
+  @include vp-767 {
+    margin-bottom: 12px;
+  }
+}
+
+.benefits__item:nth-child(n+4) svg,
+.benefits__item:nth-child(n+4) .benefits__item-title {
+  @include vp-1023 {
+    margin-bottom: 5px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 12px;
+  }
+}
+
+.benefits__item:nth-child(n+3) {
+  padding-bottom: 92px;
+
+  @include vp-1023 {
+    padding-bottom: 72px;
+  }
+
+  @include vp-767 {
+    min-height: 325px;
+    padding-bottom: 0;
+  }
+}
+
+.benefits__item:nth-child(-n+2) {
+  @include vp-767 {
+    min-height: 340px;
   }
 }
 
@@ -53,6 +100,10 @@
   color: $color-blue;
   position: relative;
 
+  @include vp-1023 {
+    margin-bottom: 8px;
+  }
+
   @include vp-767 {
     font-size: 20px;
     line-height: 28px;
@@ -63,7 +114,7 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 21.6px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   color: $color-dark;

@@ -1,43 +1,17 @@
 .logo {
   display: flex;
   align-items: center;
-}
+  width: 100%;
+  max-width: 215px;
+  margin-right: 15px;
 
-.logo__text {
-  display: flex;
-  flex-direction: column;
-
-  @include vp-767 {
-    display: none;
+  &:hover,
+  &:focus {
+    opacity: 0.7;
   }
 }
 
-.logo__text-name {
-  padding: 0;
-  margin: 0;
-  font-size: 25px;
-  line-height: 30px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  color: $color-light;
-}
-
-.logo__text-description {
-  padding: 0;
-  margin: 0;
-  font-size: 12px;
-  line-height: 14px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 500;
-  color: $color-default-white;
-  opacity: 70%;
-}
-
-.logo__image {
-  margin-right: 15px;
-}
-
-.logo__image img {
+.logo__image--header img {
   @include vp-767 {
     width: 35px;
     height: 35px;

@@ -5,9 +5,14 @@
   line-height: 16px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
+  letter-spacing: 0.75px;
   color: $color-default-white;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+
+  @include vp-1023 {
+    margin-bottom: 23px;
+  }
 
   @include vp-767 {
     margin-bottom: 0;
@@ -19,14 +24,19 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  padding-left: 25px;
+
+  @include vp-767 {
+    margin-top: -5px;
+    padding-left: 25px;
+  }
 }
 
-.office-contacts__item {
+.office-contacts__item,
+.office-contacts__item span {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 21.6px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   color: $color-default-white;
@@ -34,10 +44,40 @@
 
   @include vp-767 {
     font-size: 14px;
-    line-height: 25px;
+    line-height: 18.9px;
+  }
+}
+
+.office-contacts__item--adress {
+  @include vp-767 {
+    margin-bottom: 20px;
+  }
+}
+
+.office-contacts__item--phone:hover span {
+  &:hover {
+    color: $color-blue;
+  }
+}
+
+.office-contacts__item--phone {
+  line-height: 25px;
+
+  &:hover {
+    color: $color-blue;
   }
 }
 
 .office-contacts__item + .office-contacts__item {
-  margin-top: 10px;
+  margin-top: 5px;
+
+  @include vp-1023 {
+    margin-top: 6px;
+  }
+}
+
+.office-contacts__item--phone + .office-contacts__item--phone {
+  @include vp-767 {
+    margin-top: 10px;
+  }
 }

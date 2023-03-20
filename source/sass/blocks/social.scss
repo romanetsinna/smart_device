@@ -1,5 +1,9 @@
 .social {
   margin-left: 10px;
+
+  @include vp-767 {
+    margin-left: -6px;
+  }
 }
 
 .social__list {
@@ -7,6 +11,14 @@
   padding: 0;
   list-style-type: none;
   display: flex;
+
+  @include vp-1023 {
+    margin-top: 5px;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+  }
 }
 
 .social__item + .social__item {
@@ -23,4 +35,9 @@
 
 .social__link svg {
   fill: $color-bg;
+}
+
+.social__link:hover svg,
+.social__link:focus svg {
+  fill: $color-blue;
 }

@@ -6,6 +6,15 @@
   left: 0;
   z-index: 10;
   width: 100vw;
+  min-width: 320px;
+}
+
+.main-header__logo {
+  margin-left: 10px;
+
+  @include vp-1023 {
+    margin-left: initial;
+  }
 }
 
 .main-header__container {
@@ -31,14 +40,23 @@
   color: $color-light;
   font-size: 14px;
   line-height: 17px;
+  letter-spacing: 0.5px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   background-color: $color-dark;
   border: 1px $color-light solid;
-  padding: 10px 15px;
+  padding: 10px 19px;
   border-radius: 3px;
   user-select: none;
+  margin-right: 10px;
+  margin-top: -7px;
+
+  &:hover,
+  &:focus {
+    color: $color-blue;
+    border: 1px $color-blue solid;
+  }
 
   @include vp-1023 {
     display: none;

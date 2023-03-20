@@ -4,41 +4,40 @@
   position: relative;
   width: 100%;
   min-height: 880px;
-  background-image:
-    linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
-    url("../../img/background-image.jpg");
+  background-image: url("../img/background-image.jpg");
   background-position: center;
   background-size: cover;
   background-color: $color-dark;
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(to bottom, rgba(25, 32, 36, 0.7), rgba(25, 32, 36, 0)),
-      url("../../img/background-image@2x.jpg");
+    background-image: url("../img/background-image@2x.jpg");
   }
 
   @include vp-1023 {
     padding-top: 180px;
     padding-bottom: 205px;
     min-height: 640px;
+    background-position: 19.5%;
   }
 
   @include vp-767 {
     padding-top: 150px;
     padding-bottom: 190px;
     min-height: 560px;
+    background-position: 25.5%;
   }
 }
 
 .main-container__inner-wrapper {
   margin: 0 auto;
-  padding-left: 125px;
+  padding-left: 135px;
 
   @include vp-1023 {
     padding-left: 50px;
   }
 
   @include vp-767 {
-    padding-left: 26px;
+    padding-left: 25px;
   }
 }
 
@@ -51,17 +50,21 @@
   font-weight: 700;
   color: $color-light;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+  letter-spacing: 5.7px;
 
   @include vp-1023 {
     font-size: 64px;
     line-height: 75px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    letter-spacing: 4.5px;
   }
 
   @include vp-767 {
+    margin-bottom: 7px;
     font-size: 36px;
     line-height: 42px;
+    letter-spacing: 2.5px;
   }
 }
 
@@ -73,11 +76,16 @@
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   color: $color-light;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
+
+  @include vp-1023 {
+    margin-bottom: 57px;
+  }
 
   @include vp-767 {
     font-size: 14px;
     line-height: 22px;
+    margin-bottom: 53px;
   }
 }
 
@@ -93,22 +101,31 @@
   line-height: 21px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
+  letter-spacing: 0.9px;
   text-transform: uppercase;
   background-color: $color-blue;
   border: none;
-  padding: 15px 37px;
+  padding: 15px 27px;
   border-radius: 3px;
-	user-select: none;
+  user-select: none;
+
+  &:hover,
+  &:focus {
+    color: $color-blue;
+    background-color: $color-light;
+  }
 
   @include vp-1023 {
     margin-left: 45px;
+    padding: 16px 27px;
   }
 
   @include vp-767 {
     margin-left: 0;
     font-size: 14px;
-    line-height: 16px;
-    padding: 10px 30px;
+    line-height: 16.41px;
+    letter-spacing: 0.7px;
+    padding: 11px 37px;
   }
 }
 
@@ -130,10 +147,24 @@
   padding: 120px 0;
 
   @include vp-1023 {
-    padding: 80px 0;
+    padding: 80px 0 76px 0;
+    margin-left: -5px;
   }
 
   @include vp-767 {
-    padding: 50px 0;
+    padding: 50px 0 22px 0;
+  }
+}
+
+.main-container__about {
+  padding-bottom: 100px;
+
+  @include vp-1023 {
+    padding-bottom: 80px;
+    margin-left: -5px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 0;
   }
 }

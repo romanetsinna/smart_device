@@ -60,16 +60,16 @@ export class Form {
 
   _onFormSubmit(event, callback = null) {
     if (this.validateForm(event.target) && callback) {
-      this._callbacks[callback].successCallback(event);
-      if (this._callbacks[callback].reset) {
+      this._callbacks.base.successCallback(event);
+      if (this._callbacks.base.reset) {
         setTimeout(() => {
           this.reset(event.target);
-        }, this._callbacks[callback].resetTimeout ? this._callbacks[callback].resetTimeout : 500);
+        }, this._callbacks.base.resetTimeout ? this._callbacks.base.resetTimeout : 500);
       }
       return;
     }
     if (!this.validateForm(event.target) && callback) {
-      this._callbacks[callback].errorCallback(event);
+      this._callbacks.base.errorCallback(event);
       return;
     }
   }
