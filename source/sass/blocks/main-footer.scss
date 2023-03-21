@@ -1,11 +1,12 @@
 .main-footer {
+  flex-shrink: 0;
   background-color: $color-dark;
 }
 
 .main-footer__container {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 48px;
   padding-bottom: 65px;
 
   @include vp-1439 {

@@ -26,10 +26,10 @@
   &::before {
     position: absolute;
     content: "";
-    width: calc(100% - 725px);
+    width: calc(100% - 740px);
     height: 50%;
-    top: 245px;
-    left: 7px;
+    top: 242px;
+    left: 15px;
     background-image: url("../img/paper_airplane.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -52,7 +52,7 @@
 
 .feedback__wrapper {
   padding-left: calc(40% + 142px);
-  padding-top: 166px;
+  padding-top: 164px;
   padding-bottom: 248px;
   padding-right: 10px;
 

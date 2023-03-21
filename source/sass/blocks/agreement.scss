@@ -1,6 +1,15 @@
 .agreement__control {
   position: relative;
   display: flex;
+  padding-top: 18px;
+
+  @include vp-1023 {
+    padding-top: 13px;
+  }
+
+  @include vp-767 {
+    padding-top: 5px;
+  }
 }
 
 .agreement__input {
@@ -19,6 +28,11 @@
   background: transparent;
   border: 1px $color-default-white solid;
   border-radius: 2px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 
   @include vp-1023 {
     top: 47%;
@@ -39,22 +53,23 @@
   color: $color-default-white;
   opacity: 0.8;
   margin-left: 23px;
-  margin-top: 18px;
-
-  &:hover,
-  &:focus {
-    opacity: 0.5;
-  }
+  //margin-top: 18px;
 
   @include vp-1023 {
     margin-left: 12px;
-    margin-top: 13px;
+    //margin-top: 13px;
   }
 
   @include vp-767 {
     margin-left: 17px;
-    margin-top: 5px;
+    //margin-top: 5px;
   }
+}
+
+.agreement__input:hover ~ .agreement__mark,
+.agreement__input:focus ~ .agreement__mark {
+  border: 2px solid $color-dark;
+  outline: 0;
 }
 
 .agreement__input:checked + .agreement__mark::before,
