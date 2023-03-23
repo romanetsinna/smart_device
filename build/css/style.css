@@ -1259,7 +1259,7 @@ button,
   height: 50%;
   top: 242px;
   left: 15px;
-  background-image: url("../img/paper_airplane.png");
+  background-image: url("../img/paper_airplane.webp");
   background-repeat: no-repeat;
   background-size: 100% auto;
   z-index: 1;
@@ -3124,6 +3124,6 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .feedback .container::before {
-    background-image: url("../img/paper_airplane@2x.png");
+    background-image: url("../img/paper_airplane@2x.webp");
   }
 }

@@ -30,13 +30,13 @@
     height: 50%;
     top: 242px;
     left: 15px;
-    background-image: url("../img/paper_airplane.png");
+    background-image: url("../img/paper_airplane.webp");
     background-repeat: no-repeat;
     background-size: 100% auto;
     z-index: 1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/paper_airplane@2x.png");
+      background-image: url("../img/paper_airplane@2x.webp");
     }
 
     @media (max-width: 1279.9px) {
