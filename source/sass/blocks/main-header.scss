@@ -7,6 +7,17 @@
   z-index: 10;
   width: 100vw;
   min-width: 320px;
+  width: 100%;
+  min-height: 120px;
+
+  @include vp-1023 {
+    position: relative;
+    min-height: 100px;
+  }
+
+  @include vp-767 {
+    min-height: 70px;
+  }
 }
 
 .main-header__logo {

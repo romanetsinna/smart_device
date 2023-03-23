@@ -8,8 +8,8 @@
   @include vp-767 {
     position: relative;
     cursor: pointer;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    margin-top: 22px;
+    margin-bottom: 22px;
 
     &:hover,
     &:focus {
@@ -22,7 +22,7 @@
   @include vp-767 {
     content: "";
     position: absolute;
-    top: 20px;
+    top: -2px;
     right: 26px;
     width: 15px;
     height: 15px;
@@ -44,8 +44,8 @@
   @include vp-767 {
     content: "";
     position: absolute;
-    top: 27px;
-    right: 26px;
+    top: 4px;
+    right: 27px;
     width: 15px;
     height: 1px;
     background-color: $color-bg;

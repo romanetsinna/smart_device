@@ -4,18 +4,18 @@
   grid-template-rows: min-content min-content;
   column-gap: 8%;
 
-  @include vp-1023 {
+  @media (max-width: 1023.9px) {
     grid-template-columns: 22.25% 73.45%;
     column-gap: 4.3%;
   }
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     display: initial;
   }
 }
 
 .about__wrapper {
-  @include vp-767 {
+  @media (max-width: 1023.9px) {
     padding-bottom: 80px;
   }
 }
@@ -30,11 +30,11 @@
   color: $color-dark;
   margin-bottom: 14px;
 
-  @include vp-1023 {
+  @media (max-width: 1023.9px) {
     margin-bottom: 12px;
   }
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     font-size: 28px;
     line-height: 39px;
   }
@@ -49,7 +49,7 @@
   font-weight: 400;
   color: $color-dark;
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     font-size: 14px;
     line-height: 19px;
   }
@@ -80,22 +80,22 @@
     background-color: $color-blue;
   }
 
-  @include vp-1023 {
+  @media (max-width: 1023.9px) {
     margin-top: 19px;
   }
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     padding: 9px 40px;
     margin-top: 12px;
   }
 }
 
 .about__image {
-  @include vp-1023 {
+  @media (max-width: 1023.9px) {
     margin-top: 5px;
   }
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     display: none;
   }
 }
@@ -107,13 +107,13 @@
 .about__mobile-visible {
   display: none;
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     display: block;
   }
 }
 
 .about__mobile-unvisible {
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     display: none;
   }
 }

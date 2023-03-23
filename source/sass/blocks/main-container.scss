@@ -4,27 +4,39 @@
   position: relative;
   width: 100%;
   min-height: 880px;
-  background-image: url("../img/background-image.jpg");
+  background-image: url("../img/background-image.webp");
   background-position: center;
   background-size: cover;
   background-color: $color-dark;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/background-image@2x.jpg");
+  @media (min-width: 1024px) and (min-resolution: 2dppx) {
+    background-image: url("../img/background-image@2x.webp");
   }
 
   @include vp-1023 {
     padding-top: 180px;
     padding-bottom: 205px;
+    margin-top: -100px;
     min-height: 640px;
-    background-position: 19.5%;
+    //background-position: 19.5%;
+    background-image: url("../img/background-image-tablet.webp");
+  }
+
+  @media (min-width: 767px) and (max-width: 1023px) and (min-resolution: 2dppx) {
+    background-image: url("../img/background-image-tablet@2x.webp");
   }
 
   @include vp-767 {
     padding-top: 150px;
     padding-bottom: 190px;
+    margin-top: -70px;
     min-height: 560px;
-    background-position: 25.5%;
+    //background-position: 25.5%;
+    background-image: url("../img/background-image-mobile.webp");
+  }
+
+  @media (max-width: 766px) and (min-resolution: 2dppx) {
+    background-image: url("../img/background-image-mobile@2x.webp");
   }
 }
 

@@ -15,7 +15,6 @@
   }
 
   @include vp-767 {
-    margin-bottom: 0;
     padding-left: 25px;
   }
 }
@@ -99,4 +98,12 @@
   @include vp-1023 {
     margin-top: 5px;
   }
+
+  @include vp-767 {
+    margin-top: 5px;
+  }
+}
+
+.navigation__item:last-child {
+  padding-bottom: 18px;
 }
