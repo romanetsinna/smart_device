@@ -4,19 +4,19 @@
   padding-top: 67px;
   padding-bottom: 143px;
 
-  @include vp-1439 {
+  @media (max-width: 1439.9px) {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  @include vp-1023 {
+  @media (max-width: 1023.9px) {
     padding-left: initial;
     padding-right: initial;
     padding-top: 55px;
     padding-bottom: 75px;
   }
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     padding-top: 48px;
     padding-bottom: 85px;
   }
@@ -31,11 +31,11 @@
   font-weight: 400;
   margin-bottom: 51px;
 
-  @include vp-1023 {
+  @media (max-width: 1023.9px) {
     margin-bottom: 38px;
   }
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     display: none;
   }
 }
@@ -43,7 +43,7 @@
 .services__title-mobile {
   display: none;
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     display: block;
     margin: 0;
     padding: 0;
@@ -77,7 +77,7 @@
   bottom: 0;
   background-color: $color-blue;
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     width: 40px;
     height: 40px;
   }
@@ -91,7 +91,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 7%;
 
-  @include vp-1023 {
+  @media (max-width: 1023.9px) {
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -122,7 +122,7 @@
   bottom: 26px;
   z-index: 5;
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     width: 5px;
     height: 5px;
     right: 17px;
@@ -138,20 +138,31 @@
 .services__link p {
   position: absolute;
   grid-row: 1/2;
-  max-width: 185px;
-  margin: 46px 0 0 40px;
+  margin: 47px 40px 0 40px;
 
-  @include vp-1023 {
-    max-width: 150px;
+  @media (max-width: 1023.9px) {
     margin-top: 37px;
     margin-left: 45px;
   }
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     font-size: 18px;
-    max-width: 135px;
     margin-top: 26px;
     margin-left: 30px;
+  }
+}
+
+.services__link .services__item--laptop-view {
+  display: none;
+
+  @media (max-width: 1023.9px) {
+    display: inline-block;
+  }
+}
+
+.services__link .services__item--desktop-view {
+  @media (max-width: 1023.9px) {
+    display: none;
   }
 }
 
@@ -166,7 +177,7 @@
   border: 0;
   border-radius: 3px 0 0;
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     width: 40px;
     height: 40px;
   }
@@ -184,7 +195,7 @@
 .services__image img {
   width: 100%;
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     height: 250px;
     object-fit: cover;
   }

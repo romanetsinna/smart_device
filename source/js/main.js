@@ -61,25 +61,21 @@ if (boxes) {
 }
 
 function boxHandler(e) {
-  hidePanels();
   e.preventDefault();
   let currentBox = e.target.closest('.accordion__box');
-  let currentContent = e.target.nextElementSibling;
-  if (currentBox && currentContent) {
-    currentBox.classList.add('active');
-    if (currentBox.classList.contains('active')) {
-      currentContent.style.maxHeight = currentContent.scrollHeight + 'px';
+  if (currentBox) {
+    if (!currentBox.classList.contains('active')) {
+      hidePanels();
+      currentBox.classList.add('active');
     } else {
-      currentContent.style.maxHeight = 0;
+      hidePanels();
     }
   }
 }
 
 function hidePanels() {
   let acc = document.querySelectorAll('.accordion__box');
-  let accPanel = document.querySelectorAll('.accordion__content');
-  for (let i = 0; i < accPanel.length; i++) {
-    accPanel[i].style.maxHeight = null;
+  for (let i = 0; i < acc.length; i++) {
     acc[i].classList.remove('active');
   }
 }

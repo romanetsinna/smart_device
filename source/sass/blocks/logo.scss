@@ -12,7 +12,7 @@
 }
 
 .logo__image--header img {
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     width: 35px;
     height: 35px;
   }

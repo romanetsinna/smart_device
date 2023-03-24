@@ -13,7 +13,7 @@
     background-image: url("../img/background-image@2x.webp");
   }
 
-  @include vp-1023 {
+  @media (max-width: 1023.9px) {
     padding-top: 180px;
     padding-bottom: 205px;
     margin-top: -100px;
@@ -25,10 +25,10 @@
     background-image: url("../img/background-image-tablet@2x.webp");
   }
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     padding-top: 150px;
     padding-bottom: 190px;
-    margin-top: -70px;
+    margin-top: -98px;
     min-height: 560px;
     background-image: url("../img/background-image-mobile.webp");
   }
@@ -42,11 +42,11 @@
   margin: 0 auto;
   padding-left: 145px;
 
-  @include vp-1023 {
+  @media (max-width: 1023.9px) {
     padding-left: 50px;
   }
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     padding-left: 25px;
   }
 }
@@ -63,14 +63,14 @@
   margin-bottom: 32px;
   letter-spacing: 5.7px;
 
-  @include vp-1023 {
+  @media (max-width: 1023.9px) {
     font-size: 64px;
     line-height: 75px;
     margin-bottom: 0;
     letter-spacing: 4.5px;
   }
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     margin-bottom: 7px;
     font-size: 36px;
     line-height: 42px;
@@ -88,11 +88,11 @@
   color: $color-light;
   margin-bottom: 48px;
 
-  @include vp-1023 {
+  @media (max-width: 1023.9px) {
     margin-bottom: 57px;
   }
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 53px;
@@ -100,12 +100,13 @@
 }
 
 .main-container__text br {
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     display: none;
   }
 }
 
 .main-container__button {
+  max-width: 720px;
   color: $color-light;
   font-size: 18px;
   line-height: 21px;
@@ -125,12 +126,12 @@
     background-color: $color-light;
   }
 
-  @include vp-1023 {
+  @media (max-width: 1023.9px) {
     margin-left: 45px;
     padding: 16px 27px;
   }
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     margin-left: 0;
     font-size: 14px;
     line-height: 16.41px;
@@ -142,13 +143,13 @@
 .main-container__button--short {
   display: none;
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     display: inline;
   }
 }
 
 .main-container__button--long {
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     display: none;
   }
 }
@@ -156,12 +157,12 @@
 .main-container__benefits {
   padding: 120px 0;
 
-  @include vp-1023 {
+  @media (max-width: 1023.9px) {
     padding: 80px 0 76px 0;
     margin-left: -5px;
   }
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     padding: 50px 0 22px 0;
   }
 }
@@ -169,12 +170,12 @@
 .main-container__about {
   padding-bottom: 100px;
 
-  @include vp-1023 {
+  @media (max-width: 1023.9px) {
     padding-bottom: 80px;
     margin-left: -5px;
   }
 
-  @include vp-767 {
+  @media (max-width: 767.9px) {
     padding-bottom: 0;
   }
 }
