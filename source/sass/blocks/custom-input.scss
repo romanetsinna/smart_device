@@ -1,13 +1,5 @@
 .custom-input,
 .custom-textarea {
-  input,
-  textarea {
-    &:hover,
-    &:focus {
-      opacity: 0.8;
-    }
-  }
-
   &.is-invalid {
     input,
     textarea {
